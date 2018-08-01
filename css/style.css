@@ -1,0 +1,1175 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+	background-color: #FFFFFF;
+}
+@font-face{
+	font-family: "proxima";
+	src: url("../font/ProximaNovaCondensedRegularItalic.otf") format("OpenType"),	
+	url("../font/MyriadPro-Regular.otf") format("OpenType"),
+	url("../font/MyriadBold.ttf") format("truetype");
+}
+a {
+    text-decoration: none;
+    color: #66675D;
+}
+.menu-responsive, .menur{
+	display: none;
+}
+.linea4{
+	display: none;
+}
+/*ladding right------------------*/
+.menu-left{
+	width: 25%;
+	float: left;
+}
+.logo{
+	width: 40%;
+    margin: 0 20%;
+    max-width: 165px;
+    height: auto;
+    min-width: 145px;
+    cursor: pointer;
+}
+.lading-right{
+	width: 75%;
+	float: left;
+}
+.center{
+	background: #FFFFFF;
+    width: 90%;
+    float: left;
+}
+.linea1, .linea2, .linea3{
+	border: 0.5px solid #878788;
+}
+.linea1{
+	width: 25%;
+    float: left;
+    margin-top: 114px;
+    z-index: -1;
+    position: absolute;
+}
+.linea2{
+	top: 114px;
+    position: relative;    
+}
+.linea3{
+	bottom: 100px;
+    position: relative;
+}
+/*MENU-----------------------------------*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+	display: flex;
+    justify-content: center;
+    width: 75%;
+    padding-left: 25%;
+    padding-top: 70px;
+}
+.center-slider{
+	padding-bottom: 50px;
+	padding-top: 60px;
+}
+li{
+	display: inline;
+	float: left;
+}
+.menu li {
+	width: auto;
+}
+
+.menu .our ul li a {
+    font-family: Myriad Pro;
+    font-size: 9pt;
+}
+.menu li a{
+	display: block;
+	padding: 14px 0 0;
+	font-family: Myriad Pro;
+	font-size: 12pt;
+	letter-spacing: 3px;
+	color: #54544A;
+}
+.our{
+	padding: 0 12%;
+}
+.our a{
+	text-align: center;
+}
+.contact{
+	text-align: right;
+}
+
+.center ul ul{
+	display: none;
+}
+.our-companies li{
+	background-color: #3575D3;
+	width: 100%;
+	padding: 6px;
+    font-size: 11pt;
+    text-align: left;
+}
+.our-companies ul li a{
+	padding: 5px;
+	color: #FFF;
+	text-align: left;
+}
+
+.center ul li:hover ul{
+	display: block;
+	position: absolute;
+	z-index: 100;
+	width: 150px;
+	padding-top: 10px;
+}
+.menu li a:hover{
+	border-top: 4px solid #3575D3;
+	font-weight: bold;
+    color: #54544A;
+    padding-top: 10px;
+}
+.center ul li:hover ul li a{
+	border-top: none;
+}
+.our-companies li:hover{
+	background-color: #97B2D5;
+}
+.our-companies li a:hover{
+	color: #FFF;
+	font-weight: normal;
+}
+/*-FIN MENU-----------------------------------------------*/
+/*--OCULTAR Y MOSTRAR ABOUT----------*/
+#show,#hide,#ocultar,#mostrar, #formulario{
+	display:none;	
+}
+.menu li a label, #about label{
+	cursor:pointer;
+}
+#about{
+	width: 75%;
+    margin-left: 25%;
+    color: #A19F99;
+    font-size: 11pt;
+    font-family: Myriad Pro;
+    margin-top: 50px;
+    font-style: oblique;
+    line-height: 20px;
+    text-align: justify;
+}
+#about p{
+	padding-bottom: 25px;
+}
+div#about {
+	display:none;  
+}
+div#contactFormulario{
+	display: none;
+}
+input#formulario:checked ~ div#contactFormulario {
+	display:block;
+}
+input#show:checked ~ div#about {
+	display:block;
+}
+input#hide:checked ~ div#about {
+	display:none;
+}
+
+
+
+div#abajo{
+	display: none;
+}
+input#mostrar:checked ~ div#abajo {
+	display:block;
+}
+
+input#mostrar:checked ~ div#center-slider {
+	display:none;
+}
+input#mostrar:checked ~ div#logo2 {
+	display:none;
+}
+input#ocultar:checked ~ div#lading-right {
+	display:block;
+}
+input#mostrar:checked ~ div#about {
+	display:none;
+}
+
+
+
+
+
+.flecha{
+	width: 50px;
+	height: auto;
+	margin: 0 auto;
+}
+.flecha img{
+	width: 100%;
+}
+/*--FIN OCULTAR Y MOSTRAR ABOUT-----------*/
+.center-left{
+	float: left;
+    width: 25%;
+}
+/*---titulo slider-----------------*/
+.center-left .center-title {
+	padding: 30px 20px;
+    background-color: #54544A;
+    width: 200px;
+    z-index: 10;
+    position: absolute;
+    margin-top: 4%;    
+}
+.title-slider{
+	height: 21px;
+    overflow: hidden;
+    line-height: 15px;
+}
+.center-left ul li {
+	width: 100%;
+    text-align: center;
+}
+.center-left ul li a{
+	color: #FFFFFF;
+	font-size: 15px;
+	font-family: Myriad Pro;
+    font-weight: normal;
+    letter-spacing: 3px;
+}
+.center-left .title-slider ul{
+	animation: sliderTitulo 30s infinite;
+}
+@keyframes sliderTitulo{
+	0%, 19%{
+		opacity: 1;
+		margin-top: 0;
+	}
+	20%, 24%{
+		opacity: 0;
+	}
+	25%, 44%{
+		opacity: 1;
+		margin-top: -21px;
+	}
+	45%, 49%{
+		opacity: 0;
+	}
+	50%, 69%{
+		opacity: 1;
+		margin-top: -41px;
+	}
+	70%,74%{
+		opacity: 0;
+	}
+	75%, 94%{
+		opacity: 1;
+		margin-top: -63px;
+	}
+	95%,100%{
+		opacity: 0;
+	}
+}
+/*---FIN TITULO SLIDER--------*/
+
+.center-left .center-content{
+	position: absolute;
+    margin-top: 13%;
+    width: 160px;
+    color: #A09E9A;
+    height: 150px;
+    overflow: hidden;
+}
+.center-content ul{
+	animation: centerContent 30s infinite;
+}
+.center-content ul p{
+	margin: 0;
+	height: 150px;
+	font-family: Myriad Pro;
+    font-style: italic;
+    text-align: left;
+}
+@keyframes centerContent{
+	0%, 19%{
+		opacity: 1;
+		margin-top: 0;
+	}
+	20%, 24%{
+		opacity: 0;
+	}
+	25%, 41%{
+		opacity: 1;
+		margin-top: -150px;
+	}
+	45%, 49%{
+		opacity: 0;
+	}
+	50%, 69%{
+		opacity: 1;
+		margin-top: -300px;
+	}
+	70%, 74%{
+		opacity: 0;
+	}
+	75%, 94%{
+		opacity: 1;
+		margin-top: -450px;
+	}
+	95%, 100%{
+		opacity: 0;
+	}
+}
+/*------------SLIDER----------------*/
+
+.slider{
+	width: 75%;
+    margin-left: 25%;
+    overflow: hidden;
+}
+.slider ul{
+	width: 100%;
+	animation: slider 30s infinite;
+	animation-direction: initial;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+}
+
+@keyframes slider{	
+	0%, 19%{
+		opacity: 1;
+	}
+	20%{
+		opacity: 0.8;
+	}
+	21%{
+		opacity: 0.6;
+	}
+	22%{
+		opacity: 0.4;
+	}
+	23%{
+		opacity: 0.2;
+	}
+	24%{
+		opacity: 0;
+	}
+
+
+	25%, 44%{
+		opacity: 1;
+	}
+	45%{
+		opacity: 0.8;
+	}
+	46%{
+		opacity: 0.6;
+	}
+	47%{
+		opacity: 0.4;
+	}
+	48%{
+		opacity: 0.2;
+	}
+	49%{
+		opacity: 0;
+	}
+
+
+	50%, 69%{
+		opacity: 1;
+	}
+
+
+	70%{
+		opacity: 0.8;
+	}
+	71%{
+		opacity: 0.6;
+	}
+	72%{
+		opacity: 0.4;
+	}
+	73%{
+		opacity: 0.2;
+	}
+	74%{
+		opacity: 0;
+	}
+
+
+	75%, 94%{
+		opacity: 1;
+	}
+
+	95%{
+		opacity: 0.8;
+	}
+	96%{
+		opacity: 0.6;
+	}
+	97%{
+		opacity: 0.4;
+	}
+	98%{
+		opacity: 0.2;
+	}
+	99%{
+		opacity: 0;
+	}
+
+	
+
+}
+/*--FIN SLIDER-------*/
+/*ENLACES------*/
+.enlaces{
+	display: block;
+    justify-content: center;
+}
+#enlaces{
+	position: relative;
+	margin: 10% 0 5%;
+	width: 100%;
+}
+#enlaces li{
+	list-style: none;
+	top: 0;
+}
+#enlaces li, #enlaces a{
+	height: 100px;
+	display: block;
+}
+#latam {
+	left: 3px;
+	width: 15%;
+    margin-right: 10%;
+    background: url(../imagenes/enlaces.png) -11px 0;
+}
+#realty {
+	left: 190px;
+	width: 15%;
+    margin-right: 10%;
+	background:url("../imagenes/enlaces.png") -190px 0;
+}
+#edgewater {
+	left: 400px;
+	width: 15%;
+    margin-left: 10%;
+	background:url("../imagenes/enlaces.png") -400px 0;
+}
+#careers {
+	left: 590px;
+	width: 15%;
+    margin-left: 10%;
+	background:url("../imagenes/enlaces.png") -590px 0;
+}
+/*FIN ENLACES-------*/
+/*REDES SOCIALES---------------------------------------*/
+.redes-sociales{
+	float: left;
+	width: 10%;
+	position: relative;
+	margin-top: 155pt;
+}
+#redes{
+	height: 147px;
+	margin-left: 40%;
+}
+#redes li{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+}
+#redes li, #redes a{
+	display: block;
+}
+#redes ul li a{
+	padding: 0;
+}
+#instagram {
+	top: 0;
+	height: 25%;
+	width: 15px;
+	background:url("../imagenes/redes.png") 0 0;
+	cursor: pointer;
+}
+#twitter {
+	top: 25%;
+	height: 25%;
+	width: 15px;
+	background:url("../imagenes/redes.png") 0 30%;
+	cursor: pointer;
+}
+#linkedin {
+	top: 50%;
+	height: 25%;
+	width: 15px;
+	background:url("../imagenes/redes.png") 0 67%;
+	cursor: pointer;
+}
+#facebook {
+	top: 75%;
+	height: 25%;
+	width: 15px;
+	background:url("../imagenes/redes.png") 0 100%;
+	cursor: pointer;
+}
+/*---FIN REDES SOCIALES----------------*/
+/*------ESQUEMA REALTOR SERVICE..............*/
+.realtor{
+
+    margin: 50px 0;
+    width: 75%;
+    float: left;
+}
+.realtor{
+	width: 85%;
+    margin: 0 auto;
+    padding: 30px 5% 30px 10%;
+}
+.realtor-service img{
+	width: 100%;
+}
+.col{
+	width: 20%;
+    float: left;
+}
+.col h4{
+	color: #5B87DA;
+    font-family: proxima, Regular;
+    font-size: 12pt;
+    padding-bottom: 5px;
+}
+.col p{
+	color: #66665D;
+    font-family: proxima, Regular Italic;
+    font-size: 10pt;
+}
+.emailMark, .transaction{
+	text-align: right;
+}
+.emailMark{
+	width: 150%;
+    margin-top: 150px;
+}
+.transaction{
+	margin-top: 85%;
+    width: 150%;
+    margin-left: 20%;
+}
+.crm{
+	margin-top: 55%;
+    width: 150%;
+    margin-left: -34%;
+}
+.realtor-cloud{
+	margin-top: 110%;
+    margin-left: -30%;
+    width: 150%;
+}
+.logo2{
+	width: 70px;
+    margin: 50px 33%;
+    max-width: 70px;
+    height: auto;
+    cursor: pointer;
+}
+.logo-realtor{
+	width: 25%;
+	float: left;
+	margin-left: -33%;
+    margin-top: 300px;
+}
+/*------ FIN ESQUEMA REALTOR SERVICE..............*/
+
+/*Formulario de contacto-------------------*/
+.contact-formulario{
+	width: 75%;
+    margin-left: 25%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-formulario input, .contact-formulario textarea{
+	display: block;
+    width: 300px;
+    height: 25px;
+    border: 1px solid #97B2D5;
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: Myriad Pro;
+}
+.contact-formulario input[type=text]:focus, .contact-formulario textarea:focus{
+	border: 2px solid #97B2D5;
+	border-radius: 5px;
+}
+.contact-formulario textarea{
+	height: 80px;
+}
+.contact-formulario button{
+	height: 50px;
+    width: 200px;
+    margin: auto;
+    float: left;
+    background: #3575D3;
+    color: #fff;
+    border-radius: 6px;
+    margin-left: 32%;
+}
+.contact-formulario button:hover{
+	background: #97B2D5;
+}
+
+/*END formulario de contacto-------------*/
+@media screen and (min-width:1300px){
+	.emailMark {
+	    margin-top: 200px;
+	}
+	.our{
+		padding: 0 16%;
+	}
+}
+@media screen and (min-width:1050px){
+	.our{
+		padding: 0 16%;
+	}
+	.center-slider{
+		padding-top: 50px;
+	}
+	.center-left .center-title{
+		width: 220px;
+	}
+	.center-left p{
+		margin-top: 110px;
+	}
+	.center-left .center-title{
+	    margin-top: 2%;
+	}
+	.center-left p{
+	    margin-top: 90px;
+	}
+	.emailMark{
+		margin-top: 170px;
+	}
+	.transaction{
+		margin-top: 120%;
+	}
+	.realtor-cloud{
+		margin-top: 130%;
+	}
+	#careers {
+	left: 560px;
+	width: 15%;
+    margin-left: 10%;
+	background:url("../imagenes/enlaces.png") -560px 0;
+	}
+	.center-left .center-content {
+    margin-top: 9%;
+	}
+}
+@media screen and (max-width:1024px){
+	#careers {
+		left: 590px;
+		width: 15%;
+	    margin-left: 10%;
+		background:url("../imagenes/enlaces.png") -590px 0;
+	}
+}
+@media screen and (max-width:960px){
+	.menu li a {
+	    padding: 14px 0 0;
+	    font-size: 10pt;
+	}
+	.our {
+	    padding: 0 11%;
+	}
+	.center-left p {
+	    width: 150px;
+	}
+	.logo-realtor{
+		margin-top: 300px;
+	}
+	#latam {
+	left: 3px;
+	width: 25%;
+    margin-right: 0;
+    background: url(../imagenes/enlaces.png) -11px 0;
+	}
+	#realty {
+		left: 190px;
+		width: 25%;
+	    margin-right: 0;
+		background:url("../imagenes/enlaces.png") -190px 0;
+	}
+	#edgewater {
+		left: 400px;
+		width: 25%;
+	    margin-left: 0;
+		background:url("../imagenes/enlaces.png") -400px 0;
+	}
+	#careers {
+		left: 590px;
+		width: 20%;
+	    margin-left: 5%;
+		background:url("../imagenes/enlaces.png") -590px 0;
+	}
+	.emailMark{
+		margin-top: 130px;
+	}
+	.realtor-cloud {
+	    margin-top: 95%;
+	}
+}
+@media screen and (max-width:880px){
+	.our {
+	    padding: 0 9%;
+	}	
+	.logo2{
+		margin: 0 35% 50px 35%;
+	}
+	.emailMark {
+	    margin-top: 110px;
+	}
+	.transaction {
+	    margin-top: 60%;
+	}
+	.realtor-cloud {
+	    margin-top: 65%;
+	}
+	.center-left .center-title {
+		padding: 20px 10px;
+	    margin-top: 10px;
+	}
+	.center-left p {
+	    width: 145px;
+	}
+	.center-left .center-content {
+		margin-top: 9%;
+	}
+}
+@media screen and (max-width:778px){
+	.emailMark {
+	    margin-top: 100px;
+	}
+	.transaction {
+    	margin-top: 50%;
+	}
+	.realtor-cloud {
+    	margin-top: 55%;
+	}
+	.center-left .center-title{
+		margin-top: 1%;
+	}
+	.center-left p{
+		width: 130px;
+	}
+	.our {
+	    padding: 0 8%;
+	}
+	.menu li a {
+	    font-size: 9pt;
+	}
+}
+@media screen and (max-width:721px){
+	.menur{
+		display: block;
+		text-align: right;
+    	padding: 20px 0;
+	}
+	.menu{
+		flex-direction: column;
+	    position: absolute;
+	    z-index: 100;
+	    background: #fff;
+	    padding: 0;
+	    width: 250px;
+    	right: 0;
+    	display: none;
+	}
+	#menu-responsive:checked ~ .menu{
+		display: block;
+	}
+	.our a, .contact{
+		text-align: left;
+	}
+	.our{
+		padding: 0;
+	}
+	.menu li a{
+		padding: 20px;
+    	border-top: 1px solid #A19F99;
+    	width: 250px;
+	}
+	.menu li a:hover{
+	    padding-top: 20px;
+	}
+	.linea1{
+		margin-top: 82px;
+	}
+	.linea2{
+		top: 82px;
+	}
+	.logo{
+		width: 70%;
+    	margin: 0 10%;
+    	min-width: 0;
+	}
+	.redes-sociales{
+		float: none;
+	    width: 50%;
+	    position: absolute;
+	   	margin-top: 100px;
+	   	height: 50px;
+	}
+	#redes{		
+	    margin-left: 0;
+	    float: left;
+	    margin-left: 30%;
+	}
+	#redes li{
+		display: inline;
+		position: initial;
+		margin: 0 20px;
+	}
+	#twitter{
+		background: url(../imagenes/redes.png) 0 39%;
+	}
+	#linkedin{
+		background: url("../imagenes/redes.png") 0 77%;
+	}
+	#facebook{
+		height: 11%;
+		background: url("../imagenes/redes.png") 0 100%;
+	}
+	.center-slider {
+	    padding-top: 180px;
+	    position: absolute;
+	    width: 100%;
+	    left: 0;
+	}
+	.slider {
+	    width: 100%;
+	    margin-left: 0;
+	}
+	.center-left .center-title {
+	    margin-top: -5%;
+	}
+	.center-left .center-content {
+	    margin: 45% 5% 0;
+	    width: 90%;
+	    height: 50px;
+	}
+	.center-left p {
+	    width: 100%;
+	}
+	.center-content ul p{
+	height: 50px;
+	}
+	@keyframes centerContent{
+		0%, 19%{
+			opacity: 1;
+			margin-top: 0;
+		}
+		20%, 24%{
+			opacity: 0;
+		}
+		25%, 41%{
+			opacity: 1;
+			margin-top: -50px;
+		}
+		45%, 49%{
+			opacity: 0;
+		}
+		50%, 69%{
+			opacity: 1;
+			margin-top: -100px;
+		}
+		70%, 74%{
+			opacity: 0;
+		}
+		75%, 94%{
+			opacity: 1;
+			margin-top: -150px;
+		}
+		95%, 100%{
+			opacity: 0;
+		}
+	}
+	.linea3{
+		bottom: 153px;
+	}
+	.logo-realtor {
+	   margin-top: 596px;
+	}
+	.enlaces{
+		padding-top: 580px;
+		padding-bottom: 20px;
+		position: absolute;
+	    width: 90%;
+	    left: 0;
+	}
+	#enlaces{
+		margin: 5%;
+	}
+	#careers{
+		width: 25%;
+		margin-left: 0;
+		background: url(../imagenes/enlaces.png) -545px 0;
+	}
+	.linea4 {
+	    display: block;
+	    bottom: 50px;
+	    position: relative;
+	}
+	.center ul ul{
+		display: none;
+	}
+	.our-companies li{
+		padding: 0;
+	}
+	.menu .our ul li a {
+	    padding: 20px;
+	    border: none;
+	}
+	.center ul li:hover ul{
+		display: block;
+	    z-index: 100;
+	    width: auto;
+	    padding-top: 0;
+	    position: relative;
+	}
+	
+	.menu li a:hover{
+		border-top: 4px solid #3575D3;
+		font-weight: bold;
+	    color: #54544A;
+	    padding-top: 10px;
+	}
+	#about{
+		position: absolute;
+	    width: 80%;
+	    left: 0;
+	    padding: 0 10%;
+	    padding-top: 130px;
+	    margin: 0;
+	}
+	input#show:checked ~ .logo-realtor {
+	    margin-top: 796px;
+	}
+	input#show:checked ~ .enlaces{
+		padding-top: 800px;
+	}
+	input#show:checked ~ div#center-slider {
+		display:none;
+	}
+	input#formulario:checked ~ div#center-slider {
+		display:none;
+	}
+	input#formulario:checked ~ .enlaces {
+		padding-top: 180px;
+	}
+	.realtor-service img{
+		content: url(../imagenes/realtorServiceResponsive.png);
+	}
+	input#mostrar:checked ~ div#logo2 {
+		display:block;
+	}
+	input#mostrar:checked ~ .logo-realtor {
+	    margin-top: 240px;
+	}
+	input#mostrar:checked ~ .enlaces {	   
+	    padding-top: 950px;
+	}
+	input#mostrar:checked ~ .linea4 {
+	    bottom: -650px
+	}
+	.realtor-service img {
+	    width: 90%;
+	    padding: 0 5%;
+	}
+	#abajo{
+		position: absolute;
+	    width: 100%;
+	    left: 0;
+	    margin: 0;
+	    padding: 0;
+	    margin-top: 250px;
+	}
+	.contact-formulario{
+		margin-left: 12%;
+	}
+	.contact-formulario button{
+		margin-left: 16%;
+	}
+}
+@media screen and (max-width:650px){
+	#redes{
+		margin-left: 20%;
+	}
+	#careers {
+	    background: url(../imagenes/enlaces.png) -575px 0;
+	}
+	.redes-sociales{
+		width: 60%;
+	}
+	input#show:checked ~ .logo-realtor {
+	    margin-top: 850px;
+	}
+	input#mostrar:checked ~ .enlaces {
+	    padding-top: 800px;
+	}
+}
+@media screen and (max-width:481px){
+	.menur img{
+		width: 40px;
+	}
+	.linea1{
+		margin-top: 70px;
+	}
+	.linea2{
+		top: 70px;
+	}
+	#redes{
+		margin-left: 15%;
+	}
+	.center-slider {
+	    padding-top: 120px;
+	}
+	.logo-realtor {
+	    margin-top: 470px;
+	}
+	.enlaces {
+	    padding-top: 0;
+	    margin-top: 480px;
+	}
+	#realty {
+	    background: url(../imagenes/enlaces.png) -220px 0;
+	}
+	#edgewater{
+	    background: url(../imagenes/enlaces.png) -435px 0;
+	}
+	#careers {
+	    background: url(../imagenes/enlaces.png) -600px 0;
+	}
+	input#show:checked ~ .logo-realtor {
+	    margin-top: 900px;
+	}
+	input#show:checked ~ .enlaces{
+		padding-top: 450px;
+	}
+	.contact-formulario {
+	    margin-left: 0;
+	    margin-right: 0;
+	    margin-top: 70px;
+	    width: 100%;
+	}
+	input#formulario:checked ~ .logo-realtor {
+	    margin-top: 570px;
+	}
+	input#formulario:checked ~ .enlaces {
+	    padding-top: 0px;
+	    margin-top: 140px;
+	}
+	.contact-formulario input, .contact-formulario textarea, .contact-formulario button{
+		width: 100%;
+	}
+	.contact-formulario button{
+		margin-left: 0;
+	}
+	input#mostrar:checked ~ .enlaces {
+	    padding-top: 700px;
+	    margin-top: 0;
+	}
+}
+@media screen and (max-width:340px){
+	.menu, .menu li a{
+		width: 220px;
+	}
+	.menur{
+		padding: 10px 0;
+	}
+	.menur img{
+		width: 30px;
+	}
+	.linea1{
+		margin-top: 44px;
+	}
+	.linea2{
+		top: 44px;
+	}
+	.redes-sociales {
+	    float: none;
+	    width: 76%;
+	    position: absolute;
+	    margin-top: 70px;
+	}
+	#redes{
+		margin-left: 5%;
+	}
+	
+	#enlaces {
+	    margin: 12% 5% 0;
+	}
+	#careers {
+	    background: url(../imagenes/enlaces.png) -614px 0;
+	}
+	.logo-realtor {
+	    margin-top: 400px;
+	}
+	.enlaces {
+	    padding-top: 0;
+    	margin-top: 418px;
+	}
+	.linea4 {
+	    bottom: 50px;
+	}
+	.linea3 {
+	    bottom: 173px;
+	}
+	.center-content ul p {
+	    font-size: 15px;
+	}
+	input#show:checked ~ .logo-realtor {
+	    margin-top: 1200px;
+	}
+	input#show:checked ~ .enlaces{
+		padding-top: 820px;
+	}
+	input#formulario:checked ~ .logo-realtor {
+	    margin-top: 550px;
+	}
+	input#formulario:checked ~ .enlaces {
+	    padding-top: 0px;
+	    margin-top: 150px;
+	}
+	input#mostrar:checked ~ .enlaces {
+	    padding-top: 550px;
+	    margin-top: 0;
+	}
+	input#mostrar:checked ~ .linea4 {
+	    bottom: -230px;
+	}
+	input#mostrar:checked ~ .logo-realtor {
+	    margin-top: 180px;
+	}
+}
